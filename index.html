@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PipFlux.com is for sale – $199</title>
+<meta name="description" content="PipFlux.com is available for $199. A sharp, memorable .com for forex tools, trading education, signals and market platforms.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F1F3F8; --card:#FFFFFF; --ink:#101828; --muted:#5A6478; --line:#DCE1EC;
+  --blue:#1F6FEB; --up:#16A34A; --down:#E5484D;
+  --display:"Archivo","Segoe UI",Arial,sans-serif;
+  --body:"IBM Plex Sans","Segoe UI",Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+
+header{padding:22px 0}
+header .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px}
+.logo{font-family:var(--display);font-weight:800;font-size:1.35rem;letter-spacing:-.03em;text-decoration:none}
+.logo span{color:var(--blue)}
+.pill{font-size:.88rem;font-weight:600;background:#DDF3E4;color:#0F7A35;padding:6px 14px;border-radius:999px}
+
+.hero{padding:44px 0 80px}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(2.3rem,5.4vw,4rem);line-height:1.04;letter-spacing:-.04em}
+.lead{margin-top:20px;font-size:1.15rem;color:var(--muted);max-width:30em}
+.cta-row{margin-top:32px;display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.btn{display:inline-block;font-weight:600;text-decoration:none;padding:14px 26px;border-radius:10px;font-size:1rem;transition:transform .15s,box-shadow .15s}
+.btn-primary{background:var(--blue);color:#fff}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(31,111,235,.35)}
+.btn-ghost{border:2px solid var(--ink)}
+.btn-ghost:hover{background:var(--ink);color:#fff}
+.price-note{margin-top:18px;color:var(--muted);font-size:.95rem}
+.price-note b{color:var(--ink)}
+
+/* chart card */
+.chart{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px 22px 18px;box-shadow:0 20px 44px rgba(16,24,40,.1)}
+.chart .head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px}
+.chart .pair{font-family:var(--display);font-weight:700;font-size:1.1rem}
+.chart .gain{font-weight:600;color:var(--up);opacity:0;animation:fade .4s ease-out 1.5s forwards}
+.chart svg{display:block;width:100%;height:auto}
+.grid line{stroke:var(--line);stroke-width:1}
+.line{fill:none;stroke:var(--blue);stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:640;stroke-dashoffset:640;animation:draw 1.4s ease-out .3s forwards}
+.area{fill:url(#fillg);opacity:0;animation:fade .6s ease-out 1.2s forwards}
+.dot{fill:var(--up);opacity:0;animation:fade .3s ease-out 1.6s forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes fade{to{opacity:1}}
+.chart .foot{display:flex;justify-content:space-between;color:var(--muted);font-size:.82rem;margin-top:8px}
+
+section{padding:72px 0}
+h2.title{font-family:var(--display);font-weight:800;font-size:clamp(1.7rem,3.4vw,2.4rem);letter-spacing:-.03em;line-height:1.12;max-width:19em}
+.intro{margin-top:12px;color:var(--muted);max-width:36em}
+.uses{margin-top:40px;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.use{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px}
+.use h3{font-family:var(--display);font-size:1.12rem;margin-bottom:8px}
+.use p{color:var(--muted);font-size:.96rem}
+.use:nth-child(3n+1){border-top:5px solid var(--blue)}
+.use:nth-child(3n+2){border-top:5px solid var(--up)}
+.use:nth-child(3n){border-top:5px solid var(--down)}
+
+.why{background:var(--blue);color:#fff}
+.why .intro{color:#D6E5FF}
+.facts{margin-top:40px;display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
+.fact strong{display:block;font-family:var(--display);font-size:1.9rem}
+.fact span{color:#E3EDFF;font-size:.95rem}
+
+.buy{text-align:center}
+.box{max-width:620px;margin:0 auto;background:var(--card);border:1px solid var(--line);border-radius:24px;padding:48px 32px;box-shadow:0 18px 40px rgba(16,24,40,.1)}
+.amount{font-family:var(--display);font-weight:800;font-size:4.2rem;letter-spacing:-.05em;line-height:1;color:var(--blue)}
+.box h2{font-family:var(--display);font-weight:800;font-size:1.7rem;letter-spacing:-.02em;margin-top:14px}
+.box p{margin-top:14px;color:var(--muted)}
+.box .cta-row{justify-content:center}
+.contact{margin-top:22px;font-size:.98rem}
+.contact a{font-weight:600}
+footer{padding:36px 0 48px;text-align:center;color:var(--muted);font-size:.9rem}
+
+@media (max-width:860px){
+  .hero .wrap{grid-template-columns:1fr;gap:40px}
+  .uses,.facts{grid-template-columns:1fr 1fr}
+}
+@media (max-width:560px){
+  .uses,.facts{grid-template-columns:1fr}
+  .amount{font-size:3.4rem}
+}
+@media (prefers-reduced-motion:reduce){
+  .line{animation:none;stroke-dashoffset:0}
+  .area,.dot,.chart .gain{animation:none;opacity:1}
+  html{scroll-behavior:auto}
+  .btn{transition:none}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#">Pip<span>Flux</span>.com</a>
+    <span class="pill">Available now</span>
+  </div>
+</header>
+
+<main>
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <h1>The sharpest name in forex, ready to launch.</h1>
+      <p class="lead">PipFlux.com joins the pip, the unit every trader knows, with flux, the movement of the market. A clean .com for your trading tool, signal service or education brand. One-time price: $199.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#buy">Buy PipFlux.com</a>
+        <a class="btn btn-ghost" href="https://t.me/smartfx75" target="_blank" rel="noopener">Message on Telegram</a>
+      </div>
+      <p class="price-note"><b>$199</b> fixed price. Fast, simple transfer.</p>
+    </div>
+
+    <div class="chart" role="img" aria-label="Illustrative rising price chart">
+      <div class="head"><span class="pair">PIP / FLUX</span><span class="gain">+42.6 pips</span></div>
+      <svg viewBox="0 0 320 190" aria-hidden="true">
+        <defs>
+          <linearGradient id="fillg" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#1F6FEB" stop-opacity=".22"/>
+            <stop offset="1" stop-color="#1F6FEB" stop-opacity="0"/>
+          </linearGradient>
+        </defs>
+        <g class="grid"><line x1="0" y1="30" x2="320" y2="30"/><line x1="0" y1="80" x2="320" y2="80"/><line x1="0" y1="130" x2="320" y2="130"/><line x1="0" y1="180" x2="320" y2="180"/></g>
+        <path class="area" d="M8 156 L50 138 L88 148 L128 112 L166 124 L206 78 L244 92 L286 36 L286 180 L8 180 Z"/>
+        <path class="line" d="M8 156 L50 138 L88 148 L128 112 L166 124 L206 78 L244 92 L286 36"/>
+        <circle class="dot" cx="286" cy="36" r="6"/>
+      </svg>
+      <div class="foot"><span>Illustrative chart</span><span>Not live data</span></div>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <h2 class="title">Built for the world of trading</h2>
+    <p class="intro">The name speaks the language traders already use. Pick the product you want to build.</p>
+    <div class="uses">
+      <div class="use"><h3>Pip and lot calculator</h3><p>A simple tool traders open every day to size positions.</p></div>
+      <div class="use"><h3>Trading journal app</h3><p>Log trades, review results and learn from every session.</p></div>
+      <div class="use"><h3>Forex education hub</h3><p>Courses, guides and a blog that teaches the market step by step.</p></div>
+      <div class="use"><h3>Signals community</h3><p>A channel or membership site for market ideas and alerts.</p></div>
+      <div class="use"><h3>Broker comparison site</h3><p>Reviews, spreads and rankings in one trusted place.</p></div>
+      <div class="use"><h3>Market data dashboard</h3><p>Live rates, charts and economic calendar for active traders.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="why">
+  <div class="wrap">
+    <h2 class="title">Why PipFlux stands out</h2>
+    <p class="intro">Traders trust names that sound precise and fast. This one does both.</p>
+    <div class="facts">
+      <div class="fact"><strong>.com</strong><span>The extension customers trust most</span></div>
+      <div class="fact"><strong>7 letters</strong><span>Short, crisp and easy to remember</span></div>
+      <div class="fact"><strong>Niche fit</strong><span>“Pip” signals forex at first glance</span></div>
+      <div class="fact"><strong>Movement</strong><span>“Flux” suggests live, changing markets</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="buy" id="buy">
+  <div class="wrap">
+    <div class="box">
+      <div class="amount">$199</div>
+      <h2>Make PipFlux.com yours</h2>
+      <p>Send a message and we will agree on a safe payment and transfer method. Most deals finish the same day.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="mailto:every1134@gmail.com?subject=I%20want%20to%20buy%20PipFlux.com">Email the owner</a>
+        <a class="btn btn-ghost" href="https://t.me/smartfx75" target="_blank" rel="noopener">Telegram @smartfx75</a>
+      </div>
+      <p class="contact">Email: <a href="mailto:every1134@gmail.com">every1134@gmail.com</a> &nbsp;|&nbsp; Telegram: <a href="https://t.me/smartfx75" target="_blank" rel="noopener">@smartfx75</a></p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">PipFlux.com is for sale. Price: $199. Contact: every1134@gmail.com or Telegram @smartfx75.</div>
+</footer>
+
+</body>
+</html>
